@@ -1,10 +1,8 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.01c6f017.css",
-    "main.js": "/website/static/js/main.19f168fb.js",
+    "main.css": "/website/static/css/main.55d632cd.css",
+    "main.js": "/website/static/js/main.3fdf91a0.js",
     "static/media/425449804_403949832149062__n.jpg": "/website/static/media/425449804_403949832149062_2875417975972454681_n.a97e5c00cd538bd73bab.jpg",
-    "static/media/1.jpg": "/website/static/media/1.862e23a35c8b3a28218a.jpg",
-    "static/media/2.jpg": "/website/static/media/2.4b3a9fe94c1e0d9edd80.jpg",
     "static/media/regular_03.jpg": "/website/static/media/regular_03.373630e9a650121ef478.jpg",
     "static/media/GRM_Logo.jpeg": "/website/static/media/GRM_Logo.23e3bc8c13494d19ee7a.jpeg",
     "static/media/Mail_(iOS).svg": "/website/static/media/Mail_(iOS).fd3e96103152d82d389da5966d64f5ab.svg",
@@ -13,11 +11,11 @@
     "static/media/twitter.svg": "/website/static/media/twitter.66fd1faabbfa4faee2bbfd08cd71be83.svg",
     "index.html": "/website/index.html",
     "static/media/facebook.svg": "/website/static/media/facebook.4c38149b469ee5615f4a02295a5f8d80.svg",
-    "main.01c6f017.css.map": "/website/static/css/main.01c6f017.css.map",
-    "main.19f168fb.js.map": "/website/static/js/main.19f168fb.js.map"
+    "main.55d632cd.css.map": "/website/static/css/main.55d632cd.css.map",
+    "main.3fdf91a0.js.map": "/website/static/js/main.3fdf91a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.01c6f017.css",
-    "static/js/main.19f168fb.js"
+    "static/css/main.55d632cd.css",
+    "static/js/main.3fdf91a0.js"
   ]
 }
