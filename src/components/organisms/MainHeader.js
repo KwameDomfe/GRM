@@ -2,7 +2,8 @@ import React from 'react';
 // Links
 import { Link, NavLink } from 'react-router-dom';
 // Images
-// import vvv from '../../images/placeholders/landscape_Images/landscape-02.png';
+import vvv from '../../images/placeholders/regular_images/regular_03.jpg';
+// import menuIcon from "../../svgs/menu/menu-icon.svg";
 import logo from '../../images/_partials/logos/GRM_Logo.jpeg';
 // Social Media SVGs Icons
 import twitterLogo from '../../svgs/socialMedia/twitter.svg';
@@ -13,12 +14,13 @@ import linkeInLogo from '../../svgs/socialMedia/linkedin.svg';
 
 const MainHeader = () => {
     return (
-         
+
         <article id="o__AESLHeader" 
-            className="flex justify-between justify-around-xl items-center flex-column-xl 
-                
+            className="flex justify-between items-center justify-around-xl flex-column-xl 
+                container90
                 h5-00 w20-00-xl h-100-xl
-                pa1-00-xl"
+                pa1-00-xl
+                "
         >
             <div id="m__Logo" 
                 className="flex flex-column-xl items-center justify-center h-100" 
@@ -29,19 +31,17 @@ const MainHeader = () => {
                 <Link to="" 
                     className="white-90"
                 >
-                    
                     <figure id="m_GRM__logo" 
                         className="flex flex-column-xl items-center justify-start 
                             tc blue0"
-                    >   
-                        
+                    >
                         <img src={logo} 
                             alt="AESL Logo" 
                             className="w4-00
                                 mb0-50-l mr0-00-l"
                         /> 
                         <figcaption 
-                            className="flex flex-column justify-center items-center 
+                            className="dn flex-s flex-column justify-center items-center 
                                 w-100"
                         >
                             <h4 className="f1-25 ttu mb0-50">
@@ -66,7 +66,6 @@ const MainHeader = () => {
                 className=" flex items-center justify-center mv2-00
                     "
             >
-                
                 <form id="searchForm" 
                     action="" 
                     className="dn flex-m flex-column
@@ -95,10 +94,10 @@ const MainHeader = () => {
                         ba b--blue0 br5-00"
                 >
                     
-                <img src="" 
+                <img src={vvv}
                     alt="menuOpenToggle" 
-                    className=" w-90 
-                        pa0-25 
+                    className=" 
+                        pa0-50 br5-0 
                         blue0"
                 />
                 </figure>
@@ -121,7 +120,8 @@ const MainHeader = () => {
                         title="Ministry" 
                         aria-label="Ministry"
                     >
-                        <NavLink to="ministries/" className="blue0"
+                        <NavLink to="ministries/" 
+                            className="blue0"
                         >
                             Ministries
                         </NavLink>
@@ -130,9 +130,11 @@ const MainHeader = () => {
                     <li className="mb1-50" 
                         tabIndex="0" 
                         title="Church Service" 
-                        aria-label="Church Service">
+                        aria-label="Church Service"
+                    >
                         <NavLink to="church-services/" 
-                        className="blue0">
+                            className="blue0"
+                        >
                             Church Services
                         </NavLink>
                     </li>
@@ -161,9 +163,11 @@ const MainHeader = () => {
                     <li className="mb1-50" 
                         tabIndex="0" 
                         title="grm" 
-                        aria-label="grm">
+                        aria-label="grm"
+                    >
                         <NavLink to="grm-the-church/" 
-                            className="blue0">
+                            className="blue0"
+                        >
                             GRM - The Church
                         </NavLink>
                     </li>
@@ -240,8 +244,14 @@ const MainHeader = () => {
                     <li className="pa0-25 
                         ba br5-00 b--blue0"
                     > 
-                        <Link to="/" title="Follow GRM on youtube" target="" rel="noopener noreferrer">
-                            <img src={youTubeLogo} alt="YouTube Logo" className="w1-00"
+                        <Link to="/" 
+                            title="Follow GRM on youtube" 
+                            target="" 
+                            rel="noopener noreferrer"
+                        >
+                            <img src={youTubeLogo} 
+                                alt="YouTube Logo" 
+                                className="w1-00"
                             />
                         </Link>
                     </li>
@@ -314,8 +324,7 @@ const MainHeader = () => {
         </div> 
             </footer>
         </article>
- 
-       
+
     )
   }
   

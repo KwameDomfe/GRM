@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom"
 
-function MinToUnbelievers() {
+function FridayServices() {
   return (
     <div className = "tc"
         >
             <h1 className="mb4-00"
             >
-                Ministry to Unbelievers Section
+                Friday Services Section
             </h1>
 
             <Link to="ministry-to-unbelievers"
@@ -18,4 +18,4 @@ function MinToUnbelievers() {
   )
 }
 
-export default MinToUnbelievers
+export default FridayServices

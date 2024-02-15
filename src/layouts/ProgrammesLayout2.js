@@ -2,14 +2,15 @@ import { NavLink, Outlet } from "react-router-dom"
 import hero_image from '../images/placeholders/landscape_Images/landscape_01.png'
 import MainFooter from "../components/organisms/MainFooter"
 
-export default function TrainingArmsLayout() {
+
+export default function ProgrammesLayout2() {
   return (
-    <div id="TrainingArms"
+    <div id="Programmes"
         className=""
     >
-         <header id="" 
-            className="grid gtc12"
-        >
+        <header id="" 
+                className="grid gtc12"
+            >
             <figure className="gc1s12 gr1s3"
             >
                 <img src={hero_image} 
@@ -39,7 +40,7 @@ export default function TrainingArmsLayout() {
                 <h1 className="ph1-00 pt0-00 mv1-50
                     f2-00 f4-00-m ttu"
                 >
-                    Training Arms
+                    Programmes
                 </h1>
             </hgroup>
 
@@ -61,7 +62,7 @@ export default function TrainingArmsLayout() {
                         <p className="mb0-00
                             lh-copy  tj"
                         >
-                            Training Arms are magni impedit a atque earum officia iusto et reprehenderit tenetur iusto et reprehenderit tenetur nesciunt iusto et reprehenderit tenetur vero ratione pariatur odit omnis in temporibus.
+                            Programmes are magni impedit a atque earum officia iusto et reprehenderit tenetur iusto et reprehenderit tenetur nesciunt iusto et reprehenderit tenetur vero ratione pariatur odit omnis in temporibus.
                         </p>
                         <p className="mb0-00 
                             lh-copy tj"
@@ -83,36 +84,40 @@ export default function TrainingArmsLayout() {
                         <li>
                             <NavLink to = ""
                                 className="dib mb1-00 white-90 f1-50 ttu b"
+                            
                             >
-                                Training Arm 
+                                Programmes
                             </NavLink>
                         </li>
                         
                         <li>
-                            <NavLink to = "training-arm-one"
+                            <NavLink to = "annual"
                                 className="dib white-90 mb0-50"
-                               
+                            
                             >
-                                 Training Arm One
+                            Annuals
                             </NavLink>
                         </li>
                         
                         <li>
-                            <NavLink to = "training-arm-two" 
+                            <NavLink to= "midyear"
                                 className="dib white-90 mb0-50"
+                            
                             >
-                                Training Arm Two
+                                Mid Year
+                            </NavLink>
+                        </li>
+                        
+                        <li>
+                            <NavLink to= "quarterly"
+                                className="dib white-90 mb0-50"
+                            
+                            >
+                                Quarterly
                             </NavLink>
                         </li>
 
-                        <li>
-                            <NavLink to= "training-arm-three"
-                                className="dib white-90 mb0-50"
-                            >
-                                 Training Arm Three
-                            </NavLink>
-                        </li>
-                    </ul>
+                    </ul>    
                 </nav>
 
                 <div id="projectCategories--nav1"
@@ -123,7 +128,37 @@ export default function TrainingArmsLayout() {
                         bg-blue0
                         br0-50"
                 >
+                    <ul id="projectCategories_list_2" 
+                        className="pa0-50"
+                    >
 
+                        <li>
+                            <NavLink to = "monthly"
+                                className="dib white-90 mt2-50 mb0-50"
+                            
+                            >
+                                Monthly
+                            </NavLink>
+                        </li>
+
+                        <li>
+                            <NavLink to= "weekly"
+                                className="dib white-90 mb0-50"
+                            
+                            >
+                                Weekly
+                            </NavLink>
+                        </li>
+                        
+                        <li>
+                            <NavLink to= "special"
+                                className="dib white-90 mb0-50"
+                            
+                            >
+                            Special
+                            </NavLink>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </header>
@@ -142,11 +177,13 @@ export default function TrainingArmsLayout() {
             >
                
             </div>
+
             <footer id="mainFooter"
                 className="gc1s12"
             >
                 <MainFooter />
             </footer>
+
         </div>
     </div>
   )

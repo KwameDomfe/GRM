@@ -94,23 +94,28 @@ a:hover{
 /* ----- 02 UTILITY CLASSES ----- */
 .container{
     margin: 0 auto;  
-    max-width: 1280px;  
+    max-width: 1280px;
+    min-width: 320px;
     overflow: auto;
 }
 .container50{
     width: 50%;
+    min-width: 320px;
     max-width: 1280px;  
 }
 .container75{
     width: 75%;
+    min-width: 320px;
     max-width: 1280px;  
 }
 .container80{
     width: 80%;
+    min-width: 320px;
     max-width: 1280px;  
 }
 .container90{
     width: 90%;
+    min-width: 320px;
     max-width: 1280px;  
 }
 
@@ -140,7 +145,7 @@ a:hover{
     overflow: auto; 
 }
 
-.container90-ma{
+.container90-m{
     width: 90%;
     min-width: 380px;
     max-width: 1024px;  

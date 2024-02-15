@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom"
 
-function MinToUnbelievers() {
+function Monthly() {
   return (
     <div className = "tc"
         >
             <h1 className="mb4-00"
             >
-                Ministry to Unbelievers Section
+                Monthly Section
             </h1>
 
-            <Link to="ministry-to-unbelievers"
+            <Link to="monthly"
                 className="black-90 pv0-50 ph1-00 ba br0-25"
             >
                 Explore More
@@ -18,4 +18,4 @@ function MinToUnbelievers() {
   )
 }
 
-export default MinToUnbelievers
+export default Monthly

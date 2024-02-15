@@ -2,12 +2,12 @@ import { NavLink, Outlet } from "react-router-dom"
 import hero_image from '../images/placeholders/landscape_Images/landscape_01.png'
 import MainFooter from "../components/organisms/MainFooter"
 
-export default function TrainingArmsLayout() {
+export default function ChurchServicesLayout() {
   return (
-    <div id="TrainingArms"
+    <div id="ChurchServices"
         className=""
     >
-         <header id="" 
+        <header id="" 
             className="grid gtc12"
         >
             <figure className="gc1s12 gr1s3"
@@ -39,7 +39,7 @@ export default function TrainingArmsLayout() {
                 <h1 className="ph1-00 pt0-00 mv1-50
                     f2-00 f4-00-m ttu"
                 >
-                    Training Arms
+                    Church Services
                 </h1>
             </hgroup>
 
@@ -61,7 +61,7 @@ export default function TrainingArmsLayout() {
                         <p className="mb0-00
                             lh-copy  tj"
                         >
-                            Training Arms are magni impedit a atque earum officia iusto et reprehenderit tenetur iusto et reprehenderit tenetur nesciunt iusto et reprehenderit tenetur vero ratione pariatur odit omnis in temporibus.
+                            CHURCH SERVICES dolorem quas corrupti distinctio tempora quisquam? Vel labore deserunt nulla esse beatae? Laboriosam enim voluptate distinctio ullam cum? Rem porro deserunt harum
                         </p>
                         <p className="mb0-00 
                             lh-copy tj"
@@ -77,42 +77,44 @@ export default function TrainingArmsLayout() {
                         bg-blue1
                         br0-50"
                 >
-                    <ul id="projectCategories_list_1" 
+                        <ul id="projectCategories_list_1" 
                         className="pa0-50"
                     >
                         <li>
                             <NavLink to = ""
                                 className="dib mb1-00 white-90 f1-50 ttu b"
                             >
-                                Training Arm 
+                                Church Services
+
                             </NavLink>
                         </li>
                         
                         <li>
-                            <NavLink to = "training-arm-one"
+                            <NavLink to = "sunday-services"
                                 className="dib white-90 mb0-50"
-                               
                             >
-                                 Training Arm One
+                            Sunday Service
                             </NavLink>
                         </li>
                         
                         <li>
-                            <NavLink to = "training-arm-two" 
+                            <NavLink to = "wednesday-service"
                                 className="dib white-90 mb0-50"
+                            
                             >
-                                Training Arm Two
+                                Wednesday Service
                             </NavLink>
                         </li>
 
                         <li>
-                            <NavLink to= "training-arm-three"
+                            <NavLink to= "friday-service"
                                 className="dib white-90 mb0-50"
+                            
                             >
-                                 Training Arm Three
+                                Friday Service
                             </NavLink>
                         </li>
-                    </ul>
+                    </ul>     
                 </nav>
 
                 <div id="projectCategories--nav1"
@@ -123,7 +125,6 @@ export default function TrainingArmsLayout() {
                         bg-blue0
                         br0-50"
                 >
-
                 </div>
             </div>
         </header>
@@ -131,17 +132,11 @@ export default function TrainingArmsLayout() {
         <div id=""
             className="grid gtc12"
         >
-           
-            <main className="gc1s9 w-100 h-100"
+            <main className="gc1s12 w-100 h-100"
             >
                 <Outlet />
             </main>
-            
-            <div id=""
-                className="gc10s3 w-100 h-100 bg-red"
-            >
-               
-            </div>
+        
             <footer id="mainFooter"
                 className="gc1s12"
             >

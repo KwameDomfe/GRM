@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function MinToGod() {
   
     return (
@@ -14,11 +16,12 @@ export default function MinToGod() {
             >
                 <div class="pa2-00">
                     <h1 class="mb4-00">Ministry To God I</h1>
-                    <a class="white-90 pv0-50 ph1-00 ba br0-25" 
-                        href="/ministries"
+                    <Link  to=""
+                        class="white-90 pv0-50 ph1-00 ba br0-25" 
+                      
                     >
                             Explore More
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className="gc7s6 gr1s1
@@ -27,11 +30,12 @@ export default function MinToGod() {
             >
                 <div class="pa2-00">
                     <h1 class="mb4-00">Ministry To God II</h1>
-                    <a class="white-90 pv0-50 ph1-00 ba br0-25" 
-                        href="/ministries"
+                    <Link  to=""
+                        class="white-90 pv0-50 ph1-00 ba br0-25" 
+                      
                     >
                             Explore More
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className="gc1s6 gr2s1
@@ -41,11 +45,12 @@ export default function MinToGod() {
             >
                 <div class="pa2-00">
                     <h1 class="mb4-00">Ministry To God III</h1>
-                    <a class="white-90 pv0-50 ph1-00 ba br0-25" 
-                        href="/ministries"
+                    <Link  to=""
+                        class="white-90 pv0-50 ph1-00 ba br0-25" 
+                      
                     >
                             Explore More
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className="gc7s6 gr2s1
@@ -55,11 +60,11 @@ export default function MinToGod() {
             >
                 <div class="pa2-00">
                     <h1 class="mb4-00">Ministry To God IV</h1>
-                    <a class="white-90 pv0-50 ph1-00 ba br0-25" 
-                        href="/ministries"
+                    <Link to="" class="white-90 pv0-50 ph1-00 ba br0-25" 
+                      
                     >
                             Explore More
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

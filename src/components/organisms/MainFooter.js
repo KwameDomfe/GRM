@@ -13,7 +13,8 @@ const MainFooter = () => {
   return (
     
     <div id="" 
-    className="gc1s12 flex items-center justify-center 
+        className="gc1s12 
+            flex items-center justify-center 
         "
     >
         <div id="container" 
@@ -51,13 +52,8 @@ const MainFooter = () => {
                         </div>
                     </figure>
 
-                    <NavLink id="aesl_address--Locational_address" 
-                        className="f0-75 w-100 tc mb0-50 white-90" 
-                        itemprop="address" 
-                        itemscope="" 
-                        itemtype="http://schema.org/PostalAddress"
-                    >
-                        <span className="dib" 
+                  
+                        <span className="dib f0-75 w-100 tc mb0-50 white-90" 
                             itemprop="streetAddress"
                         >
                             <div className="mb0-25">
@@ -73,7 +69,7 @@ const MainFooter = () => {
                                 GHANA
                             </div> 
                         </span>
-                    </NavLink>
+                    
                     <div id="aesl_address--email" 
                         className="flex flex-column justify-center 
                             items-center
@@ -252,8 +248,8 @@ const MainFooter = () => {
                     >
                         <h2 className=""
                         >
-                            <NavLink className="white-90" 
-                                to="#ministries" 
+                            <NavLink to="/ministries/" 
+                                className="white-90"
                                 role="button" 
                                 aria-expanded="false"
                             >
@@ -264,7 +260,7 @@ const MainFooter = () => {
                         >
                             <li className="w-100 
                                 mb1-00">
-                                <NavLink to="" className="white-90 dib ">
+                                <NavLink to="ministries-to-god" className="white-90 dib">
                                     Ministry to God 
                                 </NavLink>
                             </li>

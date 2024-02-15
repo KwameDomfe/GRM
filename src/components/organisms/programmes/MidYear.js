@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom"
 
-function MinToGod() {
+function MidYear() {
     return (
         <div className = "tc"
         >
             <h1 className="mb4-00"
             >
-                Ministry to God Section
+                Mid Year Section
             </h1>
 
-            <Link to="ministry-to-god"
+            <Link to="midyear"
                 className="pv0-50 ph1-00 
                     black-90 
                     ba br0-25"
@@ -20,4 +20,4 @@ function MinToGod() {
     )
 }
 
-export default MinToGod
+export default MidYear

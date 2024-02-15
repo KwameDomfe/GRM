@@ -1,35 +1,45 @@
+/* IMPORTS */
+
+// React Router Imports
+import {
+createBrowserRouter,
+Route,
+createRoutesFromElements,
+RouterProvider,
+} from 'react-router-dom';
+
+// Cascading Style Sheets Imports
 import './App.css';
 import './css/utilities.css';
 import './css/gdb_normalize.css';
 
-import {
-  createBrowserRouter,
-  Route,
-  createRoutesFromElements,
-  RouterProvider,
-} from 'react-router-dom';
 
-// Root Layout
+// Layouts Imports
 import RootLayout from './layouts/RootLayout';
-
-import ChurchServicesLayout from './layouts/ChurchServicesLayout';
+import ChurchServicesLayout01 from './layouts/ChurchServicesLayout01';
+// import ChurchServicesLayout02 from './layouts/ChurchServicesLayout02';
 import MinistriesLayout01 from './layouts/MinistriesLayout01';
 import MinistriesLayout02 from './layouts/MinistriesLayout02';
-import ProgrammesLayout from './layouts/ProgrammesLayout';
+// import ProgrammesLayout01 from './layouts/ProgrammesLayout1';
+import ProgrammesLayout02 from './layouts/ProgrammesLayout1';
 import TrainingArmsLayout from './layouts/TrainingArmsLayout';
 import ProjectsLayout from './layouts/ProjectsLayout'
 import OutreachLayout from './layouts/OutreachLayout';
 import GRMChurchLayout01 from './layouts/GRMChurchLayout01';
 import GRMChurchLayout02 from './layouts/GRMChurchLayout02';
 
-// Pages Routes
-import Home from './pages/Home'
+// Home Page
+import Home 
+from './pages/Home'
 
+// Ministries Pages
+import MinistriesLandingPage from './pages/ministries/MinistriesLandingPage';
 import MinToGod from './pages/ministries/MinToGod';
 import MinToBelievers from './pages/ministries/MinToBelivers';
 import MinToUnbelievers from './pages/ministries/MinToUnbelivers';
-import MinistriesLandingPage from './pages/ministries/MinistriesLandingPage';
 
+// Programmes Pages
+import ProgrammesLandingPage from './pages/programmes/ProgrammesLandingPage';
 import Annuals from './pages/programmes/Annuals';
 import Midyear from './pages/programmes/Midyear'
 import Quarterly from './pages/programmes/Quarterly';
@@ -37,15 +47,18 @@ import Monthly from './pages/programmes/Monthly';
 import Weekly from './pages/programmes/Weekly';
 import Special from './pages/programmes/Special';
 
-
+// Church Services Pages 
+import ChurchServicesLandingPage from './pages/church-services/ChurchServicesLandingPage';
 import SundayServices from './pages/church-services/SundayServices';
-import WednesdayService from './pages/church-services/WednesdayService';
-import FridayService from './pages/church-services/FridayService';
+import WednesdayService from './pages/church-services/WednesdayServices';
+import FridayService from './pages/church-services/FridayServices';
 
+// Outreach Pages
 import Books from './pages/outreach/Books';
 import Videos from './pages/outreach/Videos';
 import Audios from './pages/outreach/Audios';
 
+// GRM The Church Pages
 import Alliances from './pages/grm-the-church/Alliances'
 import ChurchAdministration from './pages/grm-the-church/ChurchAdministration';
 import ChurchGovernance from './pages/grm-the-church/ChurchGovernance';
@@ -57,195 +70,214 @@ import MissionVisionValues from './pages/grm-the-church/MissionVisionValues';
 import Testimonials from './pages/grm-the-church/Testimonials';
 import GRMTheChurchLandingPage from './pages/grm-the-church/GRMTheChurchLandingPage'
 
-import PageNotFound
-  from './pages/PageNotFound';
-
+// Training Arm Pages
 import TrainingArmOne from './pages/training-arm/TrainingArmOne';
 import TrainingArmTwo from './pages/training-arm/TrainingArmTwo'
 import TrainingArmThree from './pages/training-arm/TrainingArmThree';
 
+// Projects Pages
 import ProjectCategoryOne from './pages/projects/ProjectCategoryOne'
 import ProjectCategoryTwo from './pages/projects/ProjectCategoryTwo'
 import ProjectCategoryThree from './pages/projects/ProjectCategoryThree'
 
+// Page Not Found Page
+import PageNotFound
+from './pages/PageNotFound';
 
-// Function
-const router = createBrowserRouter(
-  createRoutesFromElements(
+    /* FUNCTIONS */
 
-    <Route path="/"
-      element={<RootLayout />}
+    // Router Function
+    const router = createBrowserRouter(
+    createRoutesFromElements(
+
+    <Route path=""
+        element={<RootLayout />}
     >
-      <Route index
-        element={<Home />}
-      />
+        <Route index
+            element={<Home />}
+        />
 
         <Route path="ministries/"
-          element={<MinistriesLayout01 />}
-      >
-          <Route path=""
-          element={<MinistriesLandingPage />}
+            element={<MinistriesLayout01 />}
+        >
+            <Route path=""
+            element={<MinistriesLandingPage />}
         />
-      </Route>
-      <Route path="ministries/"
+        </Route>
+        <Route path="ministries/"
         element={<MinistriesLayout02 />}
-      >
-        <Route path="ministry-to-god"
-          element={<MinToGod />}
+        >
+        <Route path="ministries-to-god"
+            element={<MinToGod />}
         />
-        <Route path="ministry-to-believers"
-          element={<MinToBelievers />}
+        <Route path="ministries-to-believers"
+            element={<MinToBelievers />}
         />
-        <Route path="ministry-to-unbelievers"
-          element={<MinToUnbelievers />}
+        <Route path="ministries-to-unbelievers"
+            element={<MinToUnbelievers />}
         />
-      </Route>
+        </Route>
 
-      <Route path="church-services/"
-        element={<ChurchServicesLayout />}
-      >
+        <Route path="church-services/"
+            element={<ChurchServicesLayout01 />}
+        >
+            <Route path=""
+            element={<ChurchServicesLandingPage />}
+        />
+        </Route>
+        <Route path="church-services/"
+        element={<ChurchServicesLayout01 />}
+        >
         <Route path="sunday-services"
-          element={<SundayServices />}
+            element={<SundayServices />}
         />
-        <Route path="wednesday-service"
-          element={<WednesdayService />}
+        <Route path="wednesday-services"
+            element={<WednesdayService />}
         />
-        <Route path="friday-service"
-          element={<FridayService />}
+        <Route path="friday-services"
+            element={<FridayService />}
         />
-      </Route>
+        </Route>
 
-      <Route path="programmes/"
-        element={<ProgrammesLayout />}
-      >
+        <Route path="programmes/"
+            element={<ProgrammesLayout02 />}
+        >
+            <Route path=""
+            element={<ProgrammesLandingPage />}
+        />
+        </Route>
+        <Route path="programmes/"
+        element={<ProgrammesLayout02 />}
+        >
         <Route path="annual"
-          element={<Annuals />}
+            element={<Annuals />}
         />
         <Route path="midyear"
-          element={<Midyear />}
+            element={<Midyear />}
         />
         <Route path="quarterly"
-          element={<Quarterly />}
+            element={<Quarterly />}
         />
         <Route path="monthly"
-          element={<Monthly />}
+            element={<Monthly />}
         />
         <Route path="weekly"
-          element={<Weekly />}
+            element={<Weekly />}
         />
-        <Route path="special"
-          element={<Special />}
+        <Route path="specials"
+            element={<Special />}
         />
-      </Route>
+        </Route>
 
-      <Route path="outreach/"
+        <Route path="outreach/"
         element={<OutreachLayout />}
-      
-      >
+        
+        >
         <Route path='books'
-          element={<Books />}
+            element={<Books />}
         
         />
         <Route path="audios"
-          element={<Audios />}
+            element={<Audios />}
         />
         <Route path="videos"
-          element={<Videos />}
+            element={<Videos />}
         />
-      </Route>
+        </Route>
 
-      <Route path="grm-the-church/"
+        <Route path="grm-the-church/"
         element={<GRMChurchLayout01 />}
-      >
+        >
         <Route path=""
-          element={<GRMTheChurchLandingPage />}
+            element={<GRMTheChurchLandingPage />}
         />
-      </Route>
+        </Route>
 
-      <Route path="grm-the-church/"
+        <Route path="grm-the-church/"
         element={<GRMChurchLayout02 />}
-      >
+        >
         <Route path="history"
-          element={<History />}
+            element={<History />}
         />
         <Route path="mandate"
-          element={<Mandate />}
+            element={<Mandate />}
         />
         <Route path="functions"
-          element={<Functions />}
+            element={<Functions />}
         />
         <Route path="mission-vision-values"
-          element={<MissionVisionValues />}
+            element={<MissionVisionValues />}
         />
         <Route path="church-governance"
-          element={<ChurchGovernance />}
+            element={<ChurchGovernance />}
         />
         <Route path="church-administration"
-          element={<ChurchAdministration />}
+            element={<ChurchAdministration />}
         />
         <Route path="testimonials"
-          element={<Testimonials />}
+            element={<Testimonials />}
         />
         <Route path="alliances"
-          element={<Alliances />}
+            element={<Alliances />}
         />
         <Route path="church-responsibilities"
-          element={<ChurchResponsibilities />}
+            element={<ChurchResponsibilities />}
         />
-      </Route>
+        </Route>
 
-      <Route path="projects/"
+        <Route path="projects/"
         element={<ProjectsLayout />}
-      // errorElement = { <CareersError /> }
-      >
+        // errorElement = { <CareersError /> }
+        >
         <Route path='project-category-one'
-          element={<ProjectCategoryOne />}
+            element={<ProjectCategoryOne />}
         // loader = {careersLoader}
         />
         <Route path="project-category-two"
-          element={<ProjectCategoryTwo />}
+            element={<ProjectCategoryTwo />}
         // loader = {careerDetailsLoader}
         />
         <Route path="project-category-three"
-          element={<ProjectCategoryThree />}
+            element={<ProjectCategoryThree />}
         // loader = {careerDetailsLoader}
         />
-      </Route>
+        </Route>
 
-      <Route path="training-arms/"
+        <Route path="training-arms/"
         element={<TrainingArmsLayout />}
-      // errorElement = { <CareersError /> }
-      >
+        // errorElement = { <CareersError /> }
+        >
         <Route path='training-arm-one'
-          element={<TrainingArmOne />}
+            element={<TrainingArmOne />}
         // loader = {careersLoader}
         />
         <Route path="training-arm-two"
-          element={<TrainingArmTwo />}
+            element={<TrainingArmTwo />}
         // loader = {careerDetailsLoader}
         />
         <Route path="training-arm-three"
-          element={<TrainingArmThree />}
+            element={<TrainingArmThree />}
         // loader = {careerDetailsLoader}
         />
-      </Route>
+        </Route>
 
-      <Route path="*"
+        <Route path="*"
         element={<PageNotFound />}
-      >
-      </Route>
+        >
+        </Route>
 
     </Route>
 
-  )
-)
+    )
+    )
 
-function App() {
-  return (
+    // Main App
+    function App() {
+    return (
     <RouterProvider
-      router={router}
+        router={router}
     />
-  );
-}
+    );
+    }
 
-export default App;
+    export default App;

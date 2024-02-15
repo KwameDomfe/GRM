@@ -4,9 +4,10 @@ import MainHeader from "../components/organisms/MainHeader"
 export default function RootLayout() {
   return (
     <div id=""
-        className="vh-100 flex flex-row-xl flex-column"
+        className="flex flex-column flex-row-xl
+          vh-100"
     >
-        <aside className=""
+        <aside className="flex item-center justify-center"
         >
             <MainHeader />
         </aside>

@@ -6,8 +6,8 @@ export default function GRMTheChurchLandingPage() {
     return (
         <div>
             <div id="GRMHistoryMandateFunctions"
-                className="grid gtc12 ggap2-00 
-                    h-100
+                className="grid gtc12 
+                    h-100 mb2-00
                     bg-black-40
                     white-90"
             >
@@ -17,19 +17,18 @@ export default function GRMTheChurchLandingPage() {
                     className="gc1s12 gr1s7 h-100 cover"
                 />
                 <div id="churchHistory"
-                    className="gc2s5 gr1s3 h0-00 pb-100 bg-blue3 mt8-00"
+                    className="gc1s12 gr1s1 gc2s5-m gr1s3-s h0-00-m pb-100-m bg-blue3 ma2-00 mt4-00"
                 >
                     <hgroup className="pa1-00">
                         <h1 className='mt0-00 ttu'>History</h1>
                         <p className='f1-25 lh-copy'>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, maiores perspiciatis fuga ex molestiae, consequatur, autem enim earum provident eum quas eos doloremque. 
-                        </p>
-                        <p className='f1-25 lh-copy'>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, maiores perspiciatis fuga ex molestiae, consequatur, autem enim earum provident eum quas eos doloremque. 
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, maiores perspiciatis fuga ex molestiae, consequatur, autem enim earum provident eum quas eos doloremque.
+                            
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, maiores perspiciatis fuga ex molestiae, 
                         </p>
                         <Link to="history" 
                         className="dib 
-                            mt4-00 mr2-00 pv0-50 ph1-00 
+                            mt2-00 pv0-50 ph1-00 
                             ba 
                             f1-25 bg-gold ttu
                             br0-25 b--gold black-90
@@ -40,7 +39,7 @@ export default function GRMTheChurchLandingPage() {
                     </hgroup>
                 </div>
                 <div id="churchFunctions"
-                    className="gc2s5 gr5s3 h0-00 pb-100 bg-black-50 mb8-00"
+                    className="gc1s12 gr2s1 gc2s5-m gr5s3-m h0-00-m pb-100-m bg-black-50 ma2-00" 
                 >
                     <hgroup className="pa1-00">
                         <h1 className='mt0-00 ttu'>Functions</h1>
@@ -52,7 +51,7 @@ export default function GRMTheChurchLandingPage() {
                         </p>
                         <Link to="functions" 
                         className="dib 
-                            mt4-00 mr2-00 pv0-50 ph1-00 
+                            mt2-00 mr2-00 pv0-50 ph1-00 
                             ba 
                             f1-25 bg-gold ttu
                             br0-25 b--gold black-90
@@ -63,7 +62,7 @@ export default function GRMTheChurchLandingPage() {
                     </hgroup>
                 </div>
                 <div id="churchMandate"
-                    className="gc7s5 gr3s3 h0-00 pb-100 bg-black-50"
+                    className="gc1s12 gr3s1 gc7s5-m gr3s3-m h0-00-m pb-100-m ma2-00 bg-black-50"
                 >
                     <hgroup className="pa1-00">
                         <h1 className='mt0-00 ttu'>Mandate</h1>
@@ -75,7 +74,7 @@ export default function GRMTheChurchLandingPage() {
                         </p>
                         <Link to="mandate" 
                         className="dib 
-                            mt4-00 mr2-00 pv0-50 ph1-00 
+                            mt2-00 mr2-00 pv0-50 ph1-00 
                             ba 
                             f1-25 bg-gold ttu
                             br0-25 b--gold black-90

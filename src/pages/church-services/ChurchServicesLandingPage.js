@@ -1,32 +1,29 @@
-import MinToBelievers 
-    from "../../components/organisms/ministries/MinToBelievers"
-import MinToGod 
-    from "../../components/organisms/ministries/MinToGod"
-import MinToUnbelievers 
-    from "../../components/organisms/ministries/MinToUnbelievers"
+import SundayServices from "../../components/organisms/church-services/SundayServices"
+import WednesdayServices from "../../components/organisms/church-services/WednesdayServices"
+import FridayServices from "../../components/organisms/church-services/FridayServices"
 
 
-function MinistriesLandingPage() {
+function ChurchServicesLandingPage() {
     return (
         <div>
             <section className="flex items-center justify-center
                 min-vh-50 "
             >
-                <MinToGod />
+                <SundayServices />
             </section>
             <section className="flex items-center justify-center 
                 min-vh-50 
                 bg-black-50"
             >
-                <MinToBelievers />
+                <WednesdayServices />
             </section>
             <section className="flex items-center justify-center
                 min-vh-50 "
             >
-                <MinToUnbelievers />
+                <FridayServices />
             </section>
         </div>
     )
 }
 
-export default MinistriesLandingPage
+export default ChurchServicesLandingPage

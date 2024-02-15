@@ -11,7 +11,7 @@ import MainFooter from '../components/organisms/MainFooter'
 export default function Home(){
   return (
     <div id="home" 
-        className=""
+        className="h-100"
     >
         <section id="HomePage__Hero"
             className="min-vh-50 flex items-center justify-center
