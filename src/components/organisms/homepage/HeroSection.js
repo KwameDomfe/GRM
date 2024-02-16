@@ -7,20 +7,22 @@ function HeroSection() {
     return (
 
         <article id="HeroSection"
-            className="tc"
+            className="vh-100 tc w-75"
         >
-            <h1>Hero Section Banner</h1>
-            <p>A banner of the Church's most current public event and must include a Call to Action (CTA) and or a direction to another page For Example . </p>
-            <Link to="ministries"
-                className="white-90 pv0-50 ph1-00 ba br0-25"
-            >
-                Explore More
-            </Link>
-            <Link to="ministries"
-                className="white-90 pv0-50 ph1-00 ba br0-25"
-            >
-                enrol now
-            </Link>
+            <h1 className="f4-00">Hero Section Banner</h1>
+            <p className="f3-00">A banner of the Church's most current public event and must include a Call to Action (CTA) and or a direction to another page For Example . </p>
+            <div className="mv4-00">
+                <Link to="ministries"
+                    className="white bg-blue0 pv0-50 ph1-00 mr2-00 ba b--blue0 br0-25"
+                >
+                    Primary CTA
+                </Link>
+                <Link to="outreach/videos"
+                    className="blue0 pv0-50 ph1-00 ba b--blue0 br0-25"
+                >
+                    Secondary CTA
+                </Link>
+            </div>
 
             {/* <img id="HeroSection__Banner"
                 src={jpg_1}
