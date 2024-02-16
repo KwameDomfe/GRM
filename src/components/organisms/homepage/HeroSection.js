@@ -10,7 +10,18 @@ function HeroSection() {
             className="tc"
         >
             <h1>Hero Section Banner</h1>
-            <p>A banner of the Church's most current Happenings.</p>
+            <p>A banner of the Church's most current public event and must include a Call to Action (CTA) and or a direction to another page For Example . </p>
+            <Link to="ministries"
+                className="white-90 pv0-50 ph1-00 ba br0-25"
+            >
+                Explore More
+            </Link>
+            <Link to="ministries"
+                className="white-90 pv0-50 ph1-00 ba br0-25"
+            >
+                enrol now
+            </Link>
+
             {/* <img id="HeroSection__Banner"
                 src={jpg_1}
                 alt=""
