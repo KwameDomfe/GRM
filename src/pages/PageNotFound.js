@@ -98,7 +98,7 @@ export default function PageNotFound() {
                             Could not find the page you are looking for?
                         </p>
                         <p className="mb0-00 pr1-00 lh-copy tracked tj">
-                            Try out on the links provided to conitune exploring GRM websi
+                            Try out on the links provided to conitune exploring GRM website.
                         </p>
                     </hgroup>
                 </div>
