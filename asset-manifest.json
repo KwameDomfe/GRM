@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.55d632cd.css",
-    "main.js": "/website/static/js/main.3fdf91a0.js",
-    "static/media/425449804_403949832149062__n.jpg": "/website/static/media/425449804_403949832149062_2875417975972454681_n.a97e5c00cd538bd73bab.jpg",
-    "static/media/regular_03.jpg": "/website/static/media/regular_03.373630e9a650121ef478.jpg",
-    "static/media/GRM_Logo.jpeg": "/website/static/media/GRM_Logo.23e3bc8c13494d19ee7a.jpeg",
-    "static/media/Mail_(iOS).svg": "/website/static/media/Mail_(iOS).fd3e96103152d82d389da5966d64f5ab.svg",
-    "static/media/linkedin.svg": "/website/static/media/linkedin.33129ba0cdc4cb48fb4e6b583ac1060e.svg",
-    "static/media/youtube-symbol-svgrepo-com.svg": "/website/static/media/youtube-symbol-svgrepo-com.d5bb8d6a11b9ce6b72b11742aef82ca6.svg",
-    "static/media/twitter.svg": "/website/static/media/twitter.66fd1faabbfa4faee2bbfd08cd71be83.svg",
-    "index.html": "/website/index.html",
-    "static/media/facebook.svg": "/website/static/media/facebook.4c38149b469ee5615f4a02295a5f8d80.svg",
-    "main.55d632cd.css.map": "/website/static/css/main.55d632cd.css.map",
-    "main.3fdf91a0.js.map": "/website/static/js/main.3fdf91a0.js.map"
+    "main.css": "/grm/static/css/main.55d632cd.css",
+    "main.js": "/grm/static/js/main.bd91ea7f.js",
+    "static/media/425449804_403949832149062__n.jpg": "/grm/static/media/425449804_403949832149062_2875417975972454681_n.a97e5c00cd538bd73bab.jpg",
+    "static/media/regular_03.jpg": "/grm/static/media/regular_03.373630e9a650121ef478.jpg",
+    "static/media/GRM_Logo.jpeg": "/grm/static/media/GRM_Logo.23e3bc8c13494d19ee7a.jpeg",
+    "static/media/Mail_(iOS).svg": "/grm/static/media/Mail_(iOS).fd3e96103152d82d389da5966d64f5ab.svg",
+    "static/media/linkedin.svg": "/grm/static/media/linkedin.33129ba0cdc4cb48fb4e6b583ac1060e.svg",
+    "static/media/youtube-symbol-svgrepo-com.svg": "/grm/static/media/youtube-symbol-svgrepo-com.d5bb8d6a11b9ce6b72b11742aef82ca6.svg",
+    "static/media/twitter.svg": "/grm/static/media/twitter.66fd1faabbfa4faee2bbfd08cd71be83.svg",
+    "index.html": "/grm/index.html",
+    "static/media/facebook.svg": "/grm/static/media/facebook.4c38149b469ee5615f4a02295a5f8d80.svg",
+    "main.55d632cd.css.map": "/grm/static/css/main.55d632cd.css.map",
+    "main.bd91ea7f.js.map": "/grm/static/js/main.bd91ea7f.js.map"
   },
   "entrypoints": [
     "static/css/main.55d632cd.css",
-    "static/js/main.3fdf91a0.js"
+    "static/js/main.bd91ea7f.js"
   ]
 }
